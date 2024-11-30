@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Películas - FilmFinder</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">FilmFinder</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="peliculas.html">trailers</a>
+      <a href="series.html">Series</a>     
+      <div class="search-container">
+          <img src="../img/buscar.png" alt="Buscar" class="search-icon">
+          <input type="text" class="search-input" placeholder="Buscar película...">
+      </div>
+      <button onclick="window.location.href='reguistro.html'">Registrarse</button>
+      <a id="profile" href="perfil.html"><img id="avatar" src="../img/avatar.png" alt="Perfil"></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="peliculas">
+      <h1>Películas Populares</h1>
+      <div id="contenedor-peliculas" class="peliculas-grid">
+        <!-- Aquí se cargarán las películas con JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 FilmFinder. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="common.js"></script>
+  <script src="../script/peliculas-script.js"></script>
+</body>
+</html>
+
+
+

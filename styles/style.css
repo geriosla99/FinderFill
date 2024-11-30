@@ -1,0 +1,422 @@
+/* Estilo general del sitio */
+*{
+    box-sizing: border-box;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2d3e50;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffd700; /* Color amarillo */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700; /* Color amarillo */
+}
+
+nav .buscar {
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+nav button {
+    padding: 7px 15px;
+    background-color: #ffd700; /* Color amarillo */
+    color: #2d3e50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #e5c200; /* Color amarillo más oscuro */
+}
+
+nav img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+nav img:hover {
+    background-color: #e5c200; /* Color amarillo más oscuro */
+}
+
+main{
+    padding-top: 8rem;
+    background-color: #2d3e50;
+    height: 100%;
+}
+
+/* Estilos para la presentación de las películas */
+.featured {
+    text-align: center;
+    background-color: #2d3e50;
+}
+
+.pelicula-grande {
+    max-width: 60%; /* Reducción del tamaño */
+    margin: 0 auto;
+}
+
+.pelicula-grande img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.pelicula-grande h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.pelicula-grande button {
+    padding: 10px 20px;
+    background-color: #2d3e50;
+    color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pelicula-grande button:hover {
+    background-color: #1e2a36;
+}
+
+.miniaturas {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.miniaturas .pelicula-miniatura {
+    width: 18%;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    margin-bottom: 15px;
+}
+
+.miniaturas .pelicula-miniatura:hover {
+    transform: scale(1.05);
+}
+
+.miniaturas .pelicula-miniatura img {
+    width: 100%;
+    height: auto;
+}
+
+.miniaturas .pelicula-miniatura h4 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Estilos para el formulario de registro */
+.registro-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: #2d3e50;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #2d3e50;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ffd700;
+    color: #2d3e50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e5c200;
+}
+
+/* Estilos para la sección de detalles */
+#detalles {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 70%;
+    text-align: left;
+}
+
+#detalles h2 {
+    color: #2d3e50;
+    margin-bottom: 10px;
+}
+
+#detalles p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #333;
+}
+
+#detalles button {
+    padding: 10px 20px;
+    background-color: #2d3e50;
+    color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#detalles button:hover {
+    background-color: #1e2a36;
+}
+
+/* Estilos para la sección de tráilers */
+.trailers {
+    padding: 20px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.trailers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trailer {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.trailer:hover {
+    transform: scale(1.05);
+}
+
+.trailer iframe {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.trailer h4 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #2d3e50;
+}
+
+/* Estilos para la presentación de las series */
+.series {
+    padding: 20px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.series-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.serie {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.serie:hover {
+    transform: scale(1.05);
+}
+
+.serie img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.serie h3 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #2d3e50;
+}
+
+.serie p {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilos para la información del perfil */
+.perfil-container {
+    max-width: 600px;
+    margin-top: 5rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#perfil-info {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#perfil-info p {
+    margin-bottom: 10px;
+}
+
+/* Estilo para el mensaje */
+#mensaje {
+    text-align: center;
+    color: #2d3e50;
+}
+
+/* Footer */
+footer {
+    background-color: #2d3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+#avatar{
+    width: 4rem;
+    height: auto;
+    position: relative;
+    top: -7%;
+    left: -7%;
+}
+
+#profile{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.detailsPelis{
+    color: #fff !important;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.search-input {
+    width: 0;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    transition: width 0.3s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+}
+
+/* Efecto al pasar el mouse sobre la búsqueda */
+.search-container:hover {
+    width: 200px; /* Expande el contenedor */
+}
+
+.search-container:hover .search-input {
+    width: 100%; /* Hace visible el campo */
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Ajuste del ícono en hover */
+.search-container:hover .search-icon {
+    transform: scale(1.1);
+}

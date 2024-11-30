@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FilmFinder</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">FilmFinder</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="peliculas.html">trailers</a>
+      <a href="series.html">Series</a>        
+      <div class="search-container">
+          <img src="../img/buscar.png" alt="Buscar" class="search-icon">
+          <input type="text" class="search-input" placeholder="Buscar película...">
+      </div>
+      <button onclick="window.location.href='reguistro.html'">Registrarse</button>
+      <a id="profile" href="perfil.html"><img id="avatar" src="../img/avatar.png" alt="Perfil"></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="featured">
+      <div id="pelicula-destacada" class="pelicula-grande">
+        <!-- Película destacada grande se cargará aquí con JavaScript -->
+      </div>
+      <div id="miniaturas" class="miniaturas">
+        <!-- Miniaturas de películas se cargarán aquí con JavaScript -->
+      </div>
+    </section>
+
+    <section id="detalles">
+      <!-- Detalles de la película -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 FilmFinder. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../script/index-script.js"></script>
+</body>
+</html>
+
+
+
+
+
